@@ -28,8 +28,13 @@ export default {
   ],
   components: true,
   buildModules: ["@nuxt/typescript-build"],
-  modules: ["@nuxtjs/axios", "@nuxtjs/pwa", "@nuxt/content"],
-  axios: {},
-  content: {},
+  modules: ["@nuxtjs/pwa", "@nuxtjs/apollo"],
   build: {},
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: "http://localhost:8000",
+      },
+    },
+  },
 }

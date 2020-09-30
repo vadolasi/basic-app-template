@@ -1,5 +1,5 @@
 import Vue from "vue"
-import { defineCustomElements as Ionic } from "@ionic/core/loader"
+import Ionic from "@modus/ionic-vue"
 
 Vue.use(Ionic)
 Vue.config.ignoredElements = [/^ion-/]
